@@ -1,0 +1,17 @@
+ATIVIDADE 01:
+- Em Alimento e Ingrediente não pode ser aceito nenhum valor negativo.
+
+ATIVIDADE 02:
+- Em Receita inclua as instruções de preparo, e um método para exibir todos os ingredientes junto com as instruções.
+
+ATIVIDADE 03:
+- Em Ingrediente inclua o tipo de medida a ser utilizado (unidade, grama, ml, porção, fatia, etc).
+
+ATIVIDADE 04:
+- Crie uma classe Refeicao, que deve possuir diferentes receitas de acordo com o dia da semana, além do horário da refeição.
+
+ATIVIDADE 05:
+- Crie a classe CardapioSemanal, que deve conter as refeições de uma semana.
+
+ATIVIDADE 06:
+- Crie a classe Tempero, e permita que a classe Ingrediente aceite tanto Alimento quanto Tempero.
