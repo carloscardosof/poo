@@ -13,6 +13,9 @@ public class Aplicativo {
             //banana.gorduras = -20;
             Tempero acucar = new Tempero("açúcar",800);
 
+            Molho molhoTomate = new Molho("molho tomate",900);
+            Ingrediente molhoNaReceita = new Ingrediente(molhoTomate,30,Ingrediente.GRAMA);
+
             Receita saladaDeFruta = new Receita();
             saladaDeFruta.setNome("Salada de fruta");
 

@@ -3,8 +3,7 @@ import java.util.Date;
 
 public class Ingrediente {
 
-    private Alimento alimento;
-    private Tempero tempero;
+    private Componente componente;
     private int quantidade;
     public static final String UNIDADE = "unidade";
     public static final String PORCAO = "porcao";
@@ -14,32 +13,32 @@ public class Ingrediente {
 
 
 
-    Ingrediente(Alimento alimento, int quantidade, String medida){
-        this.alimento = alimento;
+    Ingrediente(Componente componente, int quantidade, String medida){
+        this.componente = componente;
         this.quantidade = quantidade;
     }
 
-    Ingrediente(Alimento alimento, int quantidade){
-        this.alimento = alimento;
+    Ingrediente(Componente componente, int quantidade){
+        this.componente = componente;
         this.quantidade = quantidade;
         this.medida = Ingrediente.GRAMA;
     }
 
     //@Override
-    Ingrediente(Tempero tempero, int quantidade, String medida){
+    /*Ingrediente(Tempero tempero, int quantidade, String medida){
         this.tempero = tempero;
         this.setQuantidade(quantidade);
+    }*/
+
+
+
+
+    public Componente getComponente() {
+        return componente;
     }
 
-
-
-
-    public Alimento getAlimento() {
-        return alimento;
-    }
-
-    public void setAlimento(Alimento alimento) {
-        this.alimento = alimento;
+    public void setComponente(Componente componente) {
+        this.componente = componente;
     }
 
     public int getQuantidade() {
@@ -55,10 +54,7 @@ public class Ingrediente {
     }
 
     public double getCalorias(){
-        if(this.alimento == null){
-            return this.tempero.getCalorias()*this.quantidade;
-        }
-        return this.alimento.getCalorias()*this.quantidade;
+        return this.componente.getCalorias()*this.quantidade;
 
     }
 }
